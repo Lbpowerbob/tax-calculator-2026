@@ -127,7 +127,7 @@ export function TaxBreakdown({ result, activityType }: TaxBreakdownProps) {
 
   return (
     <div className="space-y-1">
-      <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-3">
+      <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
         Détail du calcul (annuel)
       </p>
 
@@ -201,14 +201,14 @@ export function TaxBreakdown({ result, activityType }: TaxBreakdownProps) {
 
       <Separator />
 
-      <div className="flex items-center justify-between py-2">
-        <span className="text-sm font-semibold">Revenu net estimé</span>
-        <span className="text-base font-bold text-green-600 dark:text-green-400">
+      <div className="flex items-center justify-between py-2.5 px-3 -mx-3 rounded-xl bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 border border-emerald-200/60 dark:border-emerald-800/60">
+        <span className="text-sm font-bold text-emerald-700 dark:text-emerald-300">Revenu net estimé</span>
+        <span className="text-base font-extrabold text-emerald-600 dark:text-emerald-400 tabular-nums">
           {formatCurrency(result.netRevenue)}
         </span>
       </div>
 
-      <div className="rounded-lg bg-muted/50 p-3 mt-2 space-y-2">
+      <div className="rounded-xl bg-muted/40 border border-border/60 p-3 mt-2 space-y-2">
         <div className="flex items-center gap-2">
           <Building2 className="h-3.5 w-3.5 text-muted-foreground" />
           <p className="text-xs font-medium text-muted-foreground">
